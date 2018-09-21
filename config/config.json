@@ -8,8 +8,7 @@
 	  "dialectOptions": {
       "ssl": true
     }
-  }
-  ,
+  },
   "test": {
     "username": "root",
     "password": null,
