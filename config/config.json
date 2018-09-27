@@ -1,26 +1,29 @@
 {
   "development": {
-    "username": "postgres",
+    "username": "hieu",
     "password": "",
-    "database": "postgres",
-    "host": "159.89.46.71",
+    "database": "hieu",
+    "host": "159.203.161.118",
     "dialect": "postgres",
 	  "dialectOptions": {
       "ssl": true
     }
   },
   "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "username": "hieu",
+    "password": "",
+    "database": "hieu",
+    "host": "159.203.161.118",
+    "dialect": "postgres",
+	  "dialectOptions": {
+      "ssl": true
+    }
   },
   "production": {
-    "username": "postgres",
+    "username": "hieu",
     "password": "",
-    "database": "postgres",
-    "host": "159.89.46.71",
+    "database": "hieu",
+    "host": "159.203.161.118",
     "dialect": "postgres",
 	  "dialectOptions": {
       "ssl": true
