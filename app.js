@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 var models = require('./models');
 // Setting for app here
+app.use(express.static(__dirname + '/public'));
 
 // Define your routes here
 app.use(express.static(__dirname + '/public'));
