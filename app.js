@@ -1,8 +1,7 @@
 var express = require('express');
 var app = express();
 var models = require('./models');
-// Setting for app here
-app.use(express.static(__dirname + '/public'));
+
 
 // Define your routes here
 app.use(express.static(__dirname + '/public'));
@@ -26,6 +25,13 @@ app.listen(app.get('port'), function(){
 
 var shirts = require('./routes/api');
 app.use('/api', shirts);
+
+var pannel = require('./routes/pannel');
+app.use('/pannel', pannel);
+
+var tour = require('./routes/tour_type');
+app.use('/tour', tour);
+
 
 app.get('/', function(req, res){
 	res.redirect('/api');
