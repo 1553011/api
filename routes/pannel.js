@@ -8,9 +8,7 @@ var tourTypeController = require('../controllers/tourTypeController');
 
 router.get('/', function (req, res) {
     pannelController.getAll(function (user) {
-        res.json({
-            user
-        });
+        res.json(user);
     });
 });
 
