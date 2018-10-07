@@ -8,7 +8,11 @@ var tourTypeController = require('../controllers/tourTypeController');
 
 router.get('/', function (req, res) {
     pannelController.getAll(function (user) {
-        res.json(user);
+        var arr=[];
+        user.forEach(function(val){
+            arr.push({imageUrl:val.imageUrl});
+        })
+        res.json(arr);
     });
 });
 
